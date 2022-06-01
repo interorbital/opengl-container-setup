@@ -33,4 +33,4 @@ Powered by [distrobox](https://github.com/89luca89/distrobox)
 
 ### Setting up your development environment 
 1. Enter the container with `distrobox enter opengldev-env`
-2. Install freeglut and glui as follows: `sudo dnf install freeglut freeglut-devel glui glui-devel mesa-dri-drivers gcc-c++`
+2. Either run `freeglut-libglui-setup.sh` or simply install freeglut and glui as follows: `sudo dnf install freeglut freeglut-devel glui glui-devel mesa-dri-drivers gcc-c++`
