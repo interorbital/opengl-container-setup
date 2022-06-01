@@ -2,7 +2,9 @@
 **Warning:** DO NOT TRY THIS YET
 
 Documenting the process of setting up a distrobox-powered container for coding with freeglut and libglui
-This is a "work in progress" guide intended to get you up and running with a no-hassle OpenGL & libglui development environment on your linux distro. Kindly powered by the excellent distrobox project. Everything else is (thankfully optional) shoddy bash scripting (if you feel like debugging) and documenting the process. You can skip straight to the instructions by clicking here.
+This is a "work in progress" guide intended to get you up and running with a no-hassle OpenGL & libglui development environment on your linux distro.
+
+Powered by [distrobox](https://github.com/89luca89/distrobox)
 
 ## Why this may be exactly what you're looking for
 * You're on a linux distribution that does not package `libglui` and feel uncertain about installing it manually.
@@ -18,7 +20,7 @@ This is a "work in progress" guide intended to get you up and running with a no-
 
 ### Setting up distrobox (manually)
 1. Install `git`, `curl`, and `podman` 
-2. Head to the page of the distrobox project. 
+2. Head to the page of the [distrobox](https://github.com/89luca89/distrobox) project. 
 3. Install the software as you see fit
 4. Create a container running the default command `distrobox create --name opengldev-env`
 5. Enter the container running `distrobox enter opengldev-env`
