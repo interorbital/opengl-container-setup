@@ -5,6 +5,8 @@ This is a "work in progress" guide intended to get you up and running with a no-
 
 Powered by [distrobox](https://github.com/89luca89/distrobox)
 
+From the Distrobox README: "Distrobox uses podman or docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio."
+
 The included scripts here don't do that much and there are definitely better ways of automating the process. However, they are bundled in as a (hopefully helpful) reference to my future self.
 
 ## Why this may be exactly what you're looking for
