@@ -1,23 +1,22 @@
 # opengl-container-setup
 
-Documenting the process of setting up a distrobox-powered container for coding with freeglut and libglui
-This is a "work in progress" guide intended to get you up and running with a no-hassle OpenGL & libglui development environment on your linux distro.
+Documenting the process of setting up a distrobox-powered container for coding with freeglut and libglui.
+This is guide is intended to get you up and running with a [distrobox](https://github.com/89luca89/distrobox)-powered minimal-hassle OpenGL & libglui development environment on your existing linux distro.
 
-Powered by [distrobox](https://github.com/89luca89/distrobox)
+If you are not familiar with distrobox, here's a snippet from the project's repository: 
+>"Distrobox uses podman or docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio."
 
-From the Distrobox README: "Distrobox uses podman or docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio."
+The scripts uploaded to this repository were mostly included as reference to my future self and are not a good way of automating that process.
 
-The included scripts here don't do that much and there are definitely better ways of automating the process. However, they are bundled in as a (hopefully helpful) reference to my future self.
-
-## Why this may be exactly what you're looking for
+### Why this may be exactly what you're looking for
 * You're on a linux distribution that does not package `libglui` and feel uncertain about installing it manually.
 * You have a deadline you forgot about and need to get set up quickly
 * You don't enjoy developing directly on your host operating system but don't want to set up a virtual machine.
 
-## Why this may not be for you
+### Why this may not be for you
 * You have experience with computer graphics and you're not afraid of manually installing libraries
 * You like installing and using everything directly on your host
-* You're on Windows, macOS, or another operating system that works well for you
+* You're on Windows, macOS, or another operating system that works well for you (note: I haven't tested this on WSL)
 
 ## Instructions
 
