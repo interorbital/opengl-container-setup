@@ -1,6 +1,6 @@
 # opengl-container-setup
 
-Documenting the process of setting up a distrobox-powered container for coding with freeglut and libglui.
+Documenting the process of setting up a distrobox-powered container for developing with freeglut and libglui.
 This is guide is intended to get you up and running with a [distrobox](https://github.com/89luca89/distrobox)-powered minimal-hassle OpenGL & libglui development environment on your existing linux distro.
 
 If you are not familiar with distrobox, here's a snippet from the project's repository: 
