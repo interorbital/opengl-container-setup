@@ -24,7 +24,7 @@ The scripts uploaded to this repository were mostly included as reference to my 
 #### Getting your container up and running 
 1. Install `git`, `curl`, and `podman` 
 2. Head to the page of the [distrobox](https://github.com/89luca89/distrobox) project. 
-3. Install the software as you see fit
+3. Install the software as you see fit -- if it is already packaged for your distribution, you will probably be better off installing it that way
 4. Create a container running the default command `distrobox create --name opengldev-env`
 5. Enter the container running `distrobox enter opengldev-env`
 
@@ -33,9 +33,10 @@ The scripts uploaded to this repository were mostly included as reference to my 
 2. Install freeglut and glui as follows: `sudo dnf install freeglut freeglut-devel glui glui-devel mesa-dri-drivers gcc-c++`
 
 ### Setting up distrobox (if you're me on a debian-based distro)
+** Warning: ** The first two scripts will cause your system to restart -- this is expected behaviour
 1. Clone the repository
-2. Execute the `distrobox-installer.sh` script
-3. Reboot
-4. Execute the `distrobox-setup.sh` script
-5. Enter the container with `distrobox enter opengldev-env`
-6. Execute the `freeglut-libglui-setup.sh` script
+2. Execute the `dependency-solver.sh` script
+3. Execute the `distrobox-installer.sh` script once the reboot is complete
+5. Execute the `distrobox-setup.sh` script once the second reboot is complete
+6. Enter the container with `distrobox enter opengldev-env`
+7. Execute the `freeglut-libglui-setup.sh` script
