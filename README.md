@@ -39,11 +39,12 @@ If you are not familiar with distrobox, here's a snippet from their repository:
 * This method installs distrobox manually without requiring sudo for anything but dependency solving 
 * The bundled scripts are no longer than two lines -- you are encouraged to verify their contents 
 * The first two scripts will cause your system to reboot - this is expected behaviour 
+* The `dependency-solver` and `distrobox-installer.sh` scripts will be deprecated once `distrobox` is available in the official repository
 
 #### Instructions for performing the semi-automated setup
 1. Clone the repository
 2. Execute the `dependency-solver.sh` script
-3. Execute the `distrobox-installer.sh` script once the reboot is complete
+3. Execute the `distrobox-installer.sh` script once the reboot is complete 
 5. Execute the `distrobox-setup.sh` script once the second reboot is complete
 6. Enter the container with `distrobox enter opengldev-env`
 7. Execute the `freeglut-libglui-setup.sh` script
