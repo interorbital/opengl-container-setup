@@ -6,9 +6,9 @@ This is intended to get you up and running with a [distrobox](https://github.com
 If you are not familiar with distrobox, here's a snippet from their repository: 
 >"Distrobox uses podman or docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio."
 
-👉 In the context of this project, this means we'll be able to make excellent use of Fedora's freeglut & glui packages from within a different distribution without having to worry about breaking our system.
+👉 In the context of this project, this means we'll be able to make excellent use of Fedora's `freeglut` and `glui` packages from within a different distribution without having to worry about breaking our system.
 
-❗ The scripts uploaded here are mostly included as reference and are not a good way of automating the process. 
+❗ The scripts uploaded here are mostly included as reference and are *not* a good way of automating the process. 
 
 ### Why this may be exactly what you're looking for
 * Your distro does not package `libglui` and you feel uncertain about installing it manually.
@@ -23,9 +23,13 @@ If you are not familiar with distrobox, here's a snippet from their repository:
 
 ### Setting up distrobox (manually)
 #### Getting your container up and running 
+| A handy tip! 🐧   |
+|--------------------------------------|
+Check to see if your distribution has packaged `distrobox` -- if it has, then you can safely skip to steps 4 & 5
+
 1. Install `git`, `curl`, and `podman` 
 2. Head to the page of the [distrobox](https://github.com/89luca89/distrobox) project. 
-3. Install the software as you see fit -- if it is already packaged for your distribution, you will probably be better off installing it that way
+3. Install the software as you see fit 
 4. Create a container running the default command `distrobox create --name opengldev-env`
 5. Enter the container running `distrobox enter opengldev-env`
 
