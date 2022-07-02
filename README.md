@@ -3,7 +3,7 @@
 Documenting the process of setting up a distrobox-powered container for developing with freeglut and libglui.
 This is intended to get you up and running with a [distrobox](https://github.com/89luca89/distrobox)-powered OpenGL & libglui development environment on your existing linux distro. 
 
-If you are not familiar with distrobox, here's a snippet from their repository: 
+If you are not familiar with distrobox, this snippet from their repository offers a succinct description: 
 >"Distrobox uses podman or docker to create containers using the Linux distribution of your choice. The created container will be tightly integrated with the host, allowing sharing of the HOME directory of the user, external storage, external USB devices and graphical apps (X11/Wayland), and audio."
 
 👉 In the context of this project, this means we'll be able to make excellent use of Fedora's `freeglut` and `glui` packages from within a different distribution without having to worry about breaking our system.
@@ -25,7 +25,8 @@ If you are not familiar with distrobox, here's a snippet from their repository:
 #### Getting your container up and running 
 | A handy tip! 🐧   |
 |--------------------------------------|
-Check to see if your distribution has packaged `distrobox` -- if it has, then you can safely skip to steps 4 & 5
+Check to see if your distribution has already packaged `distrobox` -- if it has, then you can safely skip to steps 4 & 5
+For reference, it has already been packaged for Ubuntu 22.10
 
 1. Install `git`, `curl`, and `podman` 
 2. Head to the page of the [distrobox](https://github.com/89luca89/distrobox) project. 
@@ -48,7 +49,7 @@ Check to see if your distribution has packaged `distrobox` -- if it has, then yo
 #### Instructions for performing the semi-automated setup
 1. Clone the repository
 2. Execute the `dependency-solver.sh` script
-3. Execute the `distrobox-installer.sh` script once the reboot is complete 
+3. Execute the `distrobox-installer.sh` script once the first reboot is complete 
 5. Execute the `distrobox-setup.sh` script once the second reboot is complete
 6. Enter the container with `distrobox enter opengldev-env`
 7. Execute the `freeglut-libglui-setup.sh` script
